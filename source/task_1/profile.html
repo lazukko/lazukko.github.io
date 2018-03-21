@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <meta charset="UTF-8">
     <meta name="description" content="Best social network made by people for people">
     <meta name="keyfords" content="friends, social network, free, messaging">
     <meta name="author" content="Zufar Latypov">
-    <title>Friends Social Network</title>
+    <title>Friends - Zufar Latypov</title>
 </head>
 <body>
 <header>
     <nav>
         <a href="profile.html">My Profile</a>
         <a href="friends.html">My Friends</a>
-        <a href="messages.html">My Messages</a>
-        <a href="feed.html">What's up?</a>
+        <a href="feed.html">My Feed</a>
         <a href="change_profile.html">Change Profile</a>
         <a href="all_users.html">All Users</a>
+        <a href="login.html" class="exit_link">Exit</a>
     </nav>
 </header>
 <main>
     <div class="side_column">
         <h2>Zufar Latypov</h2>
         <div class="fake_img" style="height:200px">Image</div>
+        <p id="user_data">
+            Age: 23
+            <br>
+            Followers: 100
+            <br>
+            Follows: 100
+        </p>
+        <div class="centered_button">
+            <button class="button" id="subscribe_button">Subscribe</button>
+        </div>
+
         <p>
             My name is Zufar, and I enjoy meeting new people and finding ways
             to help them have an uplifting experience. I have had a variety of customer
@@ -36,6 +48,10 @@
         </p>
     </div>
     <div class="content_column">
+        <div class="content_header">
+            <h1 id="posts_header" align="center">Zufar's Posts</h1>
+            <button class="button" id="add_pos_button" onclick="location.href='add_post.html';">Add New Post</button>
+        </div>
         <div class="post">
             <h2>First Post</h2>
             <h5>Dec 7, 2017</h5>
@@ -80,8 +96,8 @@
 </main>
 <footer>
     <div class="footer_links">
-        <a href="about.html">About Us</a>
-        <a href="career.html">Career</a>
+        <a href="profile.html">About Us</a>
+        <a href="profile.html">Career</a>
     </div>
 </footer>
 
